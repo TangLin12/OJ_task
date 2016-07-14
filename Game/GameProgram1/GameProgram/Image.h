@@ -18,55 +18,25 @@ public:
 	IplImage* GetNowImage() { return _img; }
 };
 
-class MY_BackGround :private MY_BitMap {
+class MY_BackGround :public MY_BitMap {
 public:
-	MY_BackGround(const char* filename) {
-		_img = cvLoadImage(filename);
-		if (_img) {
-			_width = _img->width;
-			_height = _img->height;
-		}
-	}
+	MY_BackGround(const char* filename);
 
-	void Show(const char* window_name) {
-		cvShowImage(window_name, _img);
-	}
+	void Show(const char* window_name);
 };
 
-class MY_Obj :private MY_BitMap {
+class MY_Obj :public MY_BitMap {
 protected:
 	CvPoint _pos;
 public:
-	MY_Obj(const char* filename,CvPoint pos):_pos(pos) {
-		_img = cvLoadImage(filename);
-		if (_img) {
-			_width = _img->width;
-			_height = _img->height;
-		}
-	}
+	CvPoint _pos;
+	MY_Obj(const char* filename, CvPoint pos = { 0,0 });
+	void Draw(IplImage* bg_img,CvPoint pos);
+};
 
-	void Draw(IplImage* bg_img, IplImage* top_img) {
-		if (bg_img != NULL&&top_img != NULL) {
-			for (int i = 0;i < top_img->height;i++) {
-				for (int j = 0;j < top_img->width;j++) {
-					int B = CV_IMAGE_ELEM(img, uchar, i, j * 3 + 0);
-					int G = CV_IMAGE_ELEM(img, uchar, i, j * 3 + 1);
-					int R = CV_IMAGE_ELEM(img, uchar, i, j * 3 + 2);
-
-					if (j + _pos.x < 0 || j + _pos.x >= bg_img->width || i + _pos.y < 0 || i + _pos.y >= bg_img->height) {
-						continue;
-					}
-
-					CV_IMAGE_ELEM(bg, uchar, i + posY, (j + posX) * 3 + 0) = B;
-					CV_IMAGE_ELEM(bg, uchar, i + posY, (j + posX) * 3 + 1) = G;
-					CV_IMAGE_ELEM(bg, uchar, i + posY, (j + posX) * 3 + 2) = R;
-				}
-			}
-		}
-		else {
-			return;
-		}
-	}
+class MY_Charactor :public MY_Obj {
+public:
+	void MY_Charactor::Move(int dir_x, int dir_y);
 };
 
 #endif
