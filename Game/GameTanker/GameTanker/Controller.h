@@ -10,6 +10,7 @@ using namespace std;
 #define NUM 10
 #define MAXROW 15
 #define MAXCOL 20
+#define PLAYNUM 1
 
 class T_BGControl {
 private:
@@ -18,21 +19,41 @@ private:
 
 public:
 	IplImage* _levelImage;
+
 	T_BGControl();
-	void Init(vector<vector<int>> map);
-	void Show();
+	~T_BGControl();
+	
+	void Init(vector<vector<int>> map);			//init basic map ,without tank , bullet,ect;
+	void Show();								//diplay one frame
+};
+
+class T_KeyBoard {
+public:
+	DIR SenseMove();
+	bool IsHit();
 };
 
 class T_GameManange {
 public:
 	T_BGControl _ui;
-	T_Tank _player1;
+	T_MyTank _player[PLAYNUM];
+	vector<T_EnemyTank*> _enemy;
 	vector<vector<int>> _map;
+	T_KeyBoard _keyboard;
 
 	T_GameManange();
+	~T_GameManange();
 
-	void TankUpdate();
+	//test tool
+	bool Intersect(CvRect r1, CvRect r2);
+	void TestIntersect();
+
+
+	void Move();
+	void Draw();
+	void Clear();
+
 	void Run();
 };
 
-#endif.
+#endif
