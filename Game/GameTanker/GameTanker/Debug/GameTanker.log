@@ -1,21 +1,33 @@
-﻿生成启动时间为 2016/7/16 星期六 21:01:40。
+﻿生成启动时间为 2016/7/22 星期五 4:49:59。
      1>项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Controller.cpp View.cpp main.cpp
-         View.cpp
-     1>d:\program files\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-         正在生成代码...
-         正在跳过...(未检测到相关更改)
-         main.cpp
-         Controller.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt T_Game.cpp
+         T_Game.cpp
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(179): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(193): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(194): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(203): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(204): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(221): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(352): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(354): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(359): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(361): warning C4018: “<”: 有符号/无符号不匹配
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.exe" /INCREMENTAL /NOLOGO opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_ml2413d.lib opencv_nonfree2413d.lib opencv_objdetect2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.lib" /MACHINE:X86 Debug\Controller.obj
          Debug\main.obj
+         Debug\T_Game.obj
+         Debug\T_Iterm.obj
+         Debug\T_Keyboard.obj
+         Debug\T_Map.obj
+         Debug\T_Resource.obj
+         Debug\T_Spirit.obj
+         Debug\T_Time.obj
+         Debug\T_Tool.obj
          Debug\View.obj
          GameTanker.vcxproj -> F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.exe
      1>已完成生成项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:06.41
+已用时间 00:00:05.00

@@ -24,6 +24,30 @@
     <ClCompile Include="Controller.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="T_Resource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Tool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Keyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Spirit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Map.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="T_Iterm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller.h">
@@ -32,8 +56,36 @@
     <ClInclude Include="View.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="T_Game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Tool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Spirit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="T_Iterm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram11.cd" />
   </ItemGroup>
 </Project>
