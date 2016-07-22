@@ -33,3 +33,11 @@ bool T_KeyBoard::IsSpace()
 	}
 	return false;
 }
+
+bool T_KeyBoard::IsPause()
+{
+	if (GetAsyncKeyState('P') & 0x8000) {
+		return true;
+	}
+	return false;
+}

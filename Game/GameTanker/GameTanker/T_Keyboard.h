@@ -10,6 +10,7 @@ public:
 	static DIR SenseMove();
 	static bool IsHit();
 	static bool IsSpace();
+	static bool IsPause();
 };
 
 #endif

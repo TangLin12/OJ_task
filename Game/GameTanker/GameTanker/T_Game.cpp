@@ -5,6 +5,13 @@ T_Game::T_Game()
 {
 	_totalImg = T_Resource::GetInstance();
 	_state = STATE_MENU;
+	mciSendString(TEXT("open ./music/bgm.wav"), NULL, 0, 0);
+	mciSendString(TEXT("open ./music/menuBgm.mp3"), NULL, 0, 0);
+	mciSendString(TEXT("open ./music/bang.wav"), NULL, 0, 0);
+	mciSendString(TEXT("open ./music/Gunfire.wav"), NULL, 0, 0);
+	mciSendString(TEXT("open ./music/hit.wav"), NULL, 0, 0);
+
+	mciSendString(TEXT("play ./music/menuBgm.mp3"), NULL, 0, 0);
 }
 
 T_Game * T_Game::GetInstance()
@@ -40,6 +47,9 @@ void T_Game::Init()
 					Run();
 					T_Frame::InitFrame(T_Game::GetInstance());
 					T_Timer::Reset("Game");
+				}
+				if (T_KeyBoard::IsPause()) {
+					cvWaitKey();
 				}
 				if (_state != STATE_RUN) {
 					break;
@@ -175,6 +185,7 @@ void T_Game::AllAttack()
 {
 	if (T_KeyBoard::IsHit()) {
 		_myTank[0]->Attack();
+		mciSendString(TEXT("play ./music/Gunfire.wav"), NULL, 0, 0);
 	}
 	for (int i = 0;i < _enemyTank.size();i++) {
 		_enemyTank[i]->Attack();
@@ -239,17 +250,34 @@ void T_Game::ItermUpdate()
 {
 	_iterm->_nowTime = GetTickCount();
 	if (_iterm->_nowTime - _iterm->_preTime >= 20000) {
+		if (_iterm != NULL) {
+			delete _iterm;
+		}
 		_iterm = new T_Iterm(GetTickCount());
 	}
-	if (_iterm->GetIterm(_myTank[0])) {
-		_map._map[14][8] = _map._map[13][8] = _map._map[13][9] = OBJ_IRON;
-		_map._map[14][10] = _map._map[13][10] = OBJ_IRON;
-		_map._wallTime = 300;
+	if (_iterm->_showTime != 0) {
+		if (_iterm->GetIterm(_myTank[0])) {
+			_map._map[14][8] == OBJ_NULL ? 1 : _map._map[14][8] = OBJ_IRON;
+			_map._map[13][8] == OBJ_NULL ? 1 : _map._map[13][8] = OBJ_IRON;
+			_map._map[13][9] == OBJ_NULL ? 1 : _map._map[13][9] = OBJ_IRON;
+			_map._map[14][10] == OBJ_NULL ? 1 : _map._map[14][10] = OBJ_IRON;
+			_map._map[13][10] == OBJ_NULL ? 1 : _map._map[13][10] = OBJ_IRON;
+			_map._wallTime = 300;
+		}
+		if (_myTank[0]->_bulletKind == 3) {
+			_enemyLimit -= _enemyTank.size();
+			_enemyTank.clear();
+			_myTank[0]->_bulletKind = 1;
+		}
+		if (_map._wallTime-- == 0) {
+			_map._map[14][8] == OBJ_IRON ? 1 : _map._map[14][8] = OBJ_NULL;
+			_map._map[13][8] == OBJ_IRON ? 1 : _map._map[13][8] = OBJ_NULL;
+			_map._map[13][9] == OBJ_IRON ? 1 : _map._map[13][9] = OBJ_NULL;
+			_map._map[14][10] == OBJ_IRON ? 1 : _map._map[14][10] = OBJ_NULL;
+			_map._map[13][10] == OBJ_IRON ? 1 : _map._map[13][10] = OBJ_NULL;
+		}
 	}
-	if (_myTank[0]->_bulletKind == 3) {
-		_enemyTank.clear();
-		_myTank[0]->_bulletKind = 1;
-	}
+	
 }
 
 
@@ -291,8 +319,10 @@ void T_Game::Set()
 		T_Timer::Register(name, 400);
 	}
 	_iterm = new T_Iterm(GetTickCount());
-	_map._map = _map._mapSpare;
+
 	_score = 0;
+	mciSendString(TEXT("pause ./music/menuBgm.mp3"), NULL, 0, 0);
+	mciSendString(TEXT("play ./music/bgm.wav"), NULL, 0, 0);
 }
 
 void T_Game::Reset()
@@ -363,6 +393,27 @@ void T_Frame::RunFrame(T_Game * game)
 		}
 	}
 
+	CvPoint pos = { 660,20 };
+	for (int i = 0;i < game->_enemyLimit;i++) {
+		T_Tool::Draw(game->_totalImg->_levelImage, game->_totalImg->_num, pos);
+		pos.x += 40;
+		if (i % 4 == 1) {
+			pos.x = 660;
+			pos.y += 30;
+		}
+	}
+
+	pos = { 660,300 };
+	for (unsigned int i = 0;i < game->_myTank.size();i++) {
+		for (int j = 0;j < game->_myTank[i]->_hp;j++) {
+			T_Tool::Draw(game->_totalImg->_levelImage, game->_totalImg->_blood, pos);
+			pos.x += 40;
+			if (i % 3 == 1) {
+				pos.x = 660;
+				pos.y += 30;
+			}
+		}
+	}
 	
 
 	game->_totalImg->ShowFrame();

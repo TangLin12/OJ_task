@@ -20,6 +20,7 @@ public:
 
 	static CvPoint RandPos();
 	static DIR GameAI();
+	static void Draw(IplImage* background, IplImage* img, CvPoint pos);
 	static bool Intersect(CvRect r1, CvRect r2);
 };
 

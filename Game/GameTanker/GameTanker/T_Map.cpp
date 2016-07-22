@@ -1,4 +1,5 @@
 #include "T_Map.h"
+#include<fstream>
 
 T_Map::T_Map()
 {
@@ -19,8 +20,33 @@ T_Map::T_Map()
 		{ 0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,2 },
 		{ 2,2,2,2,2,2,2,2,1,7,1,2,2,2,2,2,2,2,2,2 },
 	};
-	_wallTime = 0;
-	_mapSpare = _map;
+	_wallTime = -1;
+
+}
+
+T_Map::T_Map(int kind)
+{
+	char filename[40];
+	sprintf_s(filename, "./map/map%d.txt", kind);
+	ifstream in(filename);
+	for (int i = 0; i < 15; i++)
+	{
+		for (int j = 0; j < 20; j++)
+		{
+			in >> _map[i][j];
+		}
+	}
+}
+
+void T_Map::Load(T_Memento memento)
+{
+	_map = memento._map;
+}
+
+T_Memento T_Map::Save()
+{
+	T_Memento memento(_map);
+	return memento;
 }
 
 void T_Map::Intersect(T_Bullet * bullet)
@@ -107,4 +133,14 @@ void T_Map::Draw(IplImage * background, CvPoint pos, KIND kind)
 			CV_IMAGE_ELEM(background, uchar, i + pos.y, (j + pos.x) * 3 + 2) = R;
 		}
 	}
+}
+
+void T_Archive::AddIterm(T_Memento memento)
+{
+	_mementoArray.push_back(memento);
+}
+
+T_Memento T_Archive::Load(int state)
+{
+	return _mementoArray[state];
 }

@@ -23,6 +23,8 @@ public:
 	IplImage* _enemyTank[2][4];
 	IplImage* _levelImage;
 	IplImage* _meun;
+	IplImage* _num;
+	IplImage* _blood;
 
 	static T_Resource* GetInstance() {
 		if (_resource == NULL) {

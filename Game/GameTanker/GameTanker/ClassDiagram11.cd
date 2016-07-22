@@ -10,33 +10,33 @@
   <Class Name="T_Resource" Collapsed="true">
     <Position X="8.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAgAAIAABAAAAAAgBCAAQAQABBQ=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAAgAAIAABAAAAAAgBCAgQAQABBQ=</HashCode>
       <FileName>T_Resource.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="T_Bullet" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAICAAgQAACAAAAEAABAAAAAABAAAAgAQAAA=</HashCode>
+      <HashCode>AAAAAAAIIIAAAgAAAAAAAAEQAABAAAAAAAAAAgAAAAE=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="T_Spirit" Collapsed="true">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+    <Position X="3" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAAICAAgQAACAAAIAAAJAAAAAABAAACgAQAAA=</HashCode>
+      <HashCode>AAAACAAQAIAAAgAAAAAEAMEAQMABAAAAAgAACgAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="T_MyTank" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAgAAAAAAAAEAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAgAAAAAEAAEAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="T_EnemyTank" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgABAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
@@ -52,7 +52,7 @@
   <Class Name="T_Game" Collapsed="true">
     <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACFAAAAIAAAACAgABAAABAACAEYCAAABBBY=</HashCode>
+      <HashCode>AAYAAABAICFABgAIAAAACAgIBAAABAACAEYiAAABBBY=</HashCode>
       <FileName>T_Game.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -66,10 +66,38 @@
   <Class Name="T_Map" Collapsed="true">
     <Position X="7" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgIAAAEAAAgBAAAAEAAAAIAABAAAAAEAAAAAAAAA=</HashCode>
       <FileName>T_Map.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="T_BitMap" Collapsed="true">
+    <Position X="1.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAACAAAAAAABAAAAAABAAAAAAQAAA=</HashCode>
+      <FileName>T_Spirit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="T_Timer" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAABAABAAAgAEAAAAAJAAAAAAAAAAAAEAQ=</HashCode>
+      <FileName>T_Time.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="T_Iterm" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAEAAEAAgQAAAAAAEAAQEBAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>T_Iterm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TIMEINFO" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>T_Time.h</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Enum Name="DIR" Collapsed="true">
     <Position X="5.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>

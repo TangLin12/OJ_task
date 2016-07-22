@@ -36,7 +36,7 @@ void T_Timer::UpdateOnce()
 void T_Timer::Register(string name, int limit_time) {
 	for (int i = 0;i < _timers.size();i++) {
 		if (_timers[i]->_name == name) {
-			cout << "Object " << name << " is eixt";
+			//cout << "Object " << name << " is eixt";
 			return;
 		}
 	}

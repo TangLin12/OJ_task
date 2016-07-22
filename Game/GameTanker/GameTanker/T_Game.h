@@ -9,6 +9,8 @@
 #include"T_Map.h"
 #include"T_Time.h"
 #include"T_Iterm.h"
+#include <mmsystem.h>
+#pragma comment(lib,"winmm.lib")
 class T_Resource;
 #define MAXROW 15
 #define MAXCOL 20
@@ -26,12 +28,13 @@ enum STATE {
 class T_Game {
 private:
 
-	int _enemyLimit;
+
 	
 	T_Game();
 	static T_Game* _game;
 	int _score;
 public:
+	int _enemyLimit;
 	int _enemyOnceSize;
 	T_Resource* _totalImg;
 	vector<T_Spirit*> _myTank;
@@ -74,4 +77,8 @@ public:
 	static void InitFrame(T_Game* game);
 	static void RunFrame(T_Game* game);
 };
+
+
+
+
 #endif

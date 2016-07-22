@@ -11,15 +11,21 @@ using namespace std;
 enum DIR ;
 
 #define PIXEL 32
-class T_Spirit;
-class T_Bullet {
+
+class T_BitMap {
 public:
-	IplImage* _img;
 	CvPoint _pos;
 	DIR _dir;
 	int _speed;
 	int _width, _height;
 	bool _isNeedClear;
+
+};
+
+class T_Spirit;
+class T_Bullet :public T_BitMap{
+public:
+	IplImage* _img;
 	int _kind;
 	int _fireNum;
 
@@ -33,7 +39,7 @@ public:
 };
 
 
-class T_Spirit {
+class T_Spirit :public T_BitMap{
 protected:
 
 public:
@@ -41,11 +47,6 @@ public:
 	CvPoint _prePos;
 	int _hp;
 	vector<T_Bullet*> _bullet;
-	CvPoint _pos;
-	DIR _dir;
-	int _speed;
-	int _width, _height;
-	bool _isNeedClear;
 	int _preTime, _nowTime;
 	int _tankKind;
 	int _bulletKind;

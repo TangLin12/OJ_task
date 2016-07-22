@@ -26,6 +26,8 @@ T_Resource::T_Resource()
 		sprintf_s(filename, "./res/prop_bmp%d.png", i);
 		_iterm[i] = cvLoadImage(filename, 1);
 	}
+	_num = cvLoadImage("./res/num.png");
+	_blood = cvLoadImage("./res/blood.png");
 
 	cvNamedWindow("TankGame");
 	
