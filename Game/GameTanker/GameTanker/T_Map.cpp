@@ -1,6 +1,6 @@
 #include "T_Map.h"
 #include<fstream>
-
+//基本构造函数
 T_Map::T_Map()
 {
 	_map = {
@@ -23,8 +23,8 @@ T_Map::T_Map()
 	_wallTime = -1;
 
 }
-
-T_Map::T_Map(int kind)
+//文件读图///////////////////////////////////////
+void T_Map::Load(int kind)
 {
 	char filename[40];
 	sprintf_s(filename, "./map/map%d.txt", kind);
@@ -36,19 +36,20 @@ T_Map::T_Map(int kind)
 			in >> _map[i][j];
 		}
 	}
+	_wallTime = -1;
 }
-
+//备忘录读图///////////////////////////////////
 void T_Map::Load(T_Memento memento)
 {
 	_map = memento._map;
 }
-
+//保存当前图///////////////////////////////////
 T_Memento T_Map::Save()
 {
 	T_Memento memento(_map);
 	return memento;
 }
-
+//读图的交错判定-与子弹/////////////////////////
 void T_Map::Intersect(T_Bullet * bullet)
 {
 	if (bullet->_isNeedClear) {
@@ -56,6 +57,10 @@ void T_Map::Intersect(T_Bullet * bullet)
 	}
 	int col = (bullet->_pos.x + bullet->_width) / PIXEL;
 	int row = (bullet->_pos.y + bullet->_height) / PIXEL;
+	if(col>19||row>15){
+		bullet->_isNeedClear=true;
+		return;
+	}
 	switch (_map[row][col])
 	{
 	case OBJ_BLOCK:
@@ -74,15 +79,11 @@ void T_Map::Intersect(T_Bullet * bullet)
 	}
 }
 
-bool T_Map::CanDestory(int col, int row)
-{
-	return false;
-}
-
+//该点是否不能穿过
 bool T_Map::CantMove(int col, int row)
 {
-	if (row > 14 || col > 19) {
-		return false;
+	if (row > 16 || col > 19) {
+		return true;
 	}
 	switch (_map[row][col])
 	{
@@ -93,7 +94,7 @@ bool T_Map::CantMove(int col, int row)
 		return true;
 	}
 }
-
+//交错判定重载-与spirit//////////////////////
 void T_Map::Intersect(T_Spirit* spirit) {
 	int col = spirit->_pos.x / PIXEL;
 	int row = spirit->_pos.y / PIXEL;
@@ -111,7 +112,7 @@ void T_Map::Intersect(T_Spirit* spirit) {
 
 
 }
-
+//绘图方法//////////////////////////////////
 void T_Map::Draw(IplImage * background, CvPoint pos, KIND kind)
 {
 	if (kind == OBJ_NULL) {
@@ -134,12 +135,12 @@ void T_Map::Draw(IplImage * background, CvPoint pos, KIND kind)
 		}
 	}
 }
-
+//存储memento
 void T_Archive::AddIterm(T_Memento memento)
 {
 	_mementoArray.push_back(memento);
 }
-
+//读取memento
 T_Memento T_Archive::Load(int state)
 {
 	return _mementoArray[state];

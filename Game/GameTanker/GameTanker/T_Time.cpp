@@ -17,12 +17,12 @@ T_Timer::~T_Timer()
 	}
 	_timers.clear();
 }
-
+//开始计时///////////////////////////////////
 void T_Timer::Start()
 {
 	_preTime = clock();
 }
-
+//计时器更新一次/////////////////////////////
 void T_Timer::UpdateOnce()
 {
 	int now_time = clock();
@@ -32,7 +32,7 @@ void T_Timer::UpdateOnce()
 	}
 	_preTime = now_time;
 }
-
+//注册计时器//////////////////////////////////
 void T_Timer::Register(string name, int limit_time) {
 	for (int i = 0;i < _timers.size();i++) {
 		if (_timers[i]->_name == name) {
@@ -42,7 +42,7 @@ void T_Timer::Register(string name, int limit_time) {
 	}
 	_timers.push_back(new TIMEINFO(name, 0, limit_time));
 }
-
+//取消注册///////////////////////////////////////
 void T_Timer::UnRegister(string name)
 {
 	for (int i = 0;i < _timers.size();i++) {
@@ -53,7 +53,7 @@ void T_Timer::UnRegister(string name)
 		}
 	}
 }
-
+//检查时间//////////////////////////////
 bool T_Timer::CheckTimer(string name)
 {
 	for (int i = 0;i < _timers.size();i++) {
@@ -63,7 +63,7 @@ bool T_Timer::CheckTimer(string name)
 	}
 	return false;
 }
-
+//重置时间////////////////////////////////
 void T_Timer::Reset(string name)
 {
 	for (int i = 0;i < _timers.size();i++) {
@@ -72,7 +72,7 @@ void T_Timer::Reset(string name)
 		}
 	}
 }
-
+//重设时间///////////////////////////////////
 void T_Timer::Set(string name, int limit_time)
 {
 	for (int i = 0;i < _timers.size();i++) {

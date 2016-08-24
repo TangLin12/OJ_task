@@ -16,7 +16,7 @@ typedef struct TIMEINFO {
 		_timer = time;
 		_limitTime = limit_time;
 	}
-}TIMEINFO;
+}TIMEINFO;//时间节点
 
 
 class T_Timer {
@@ -24,13 +24,13 @@ public:
 	T_Timer();
 	virtual ~T_Timer();
 
-	static void Start();
-	static void UpdateOnce();
-	static void Register(string name, int limit_time);
-	static void UnRegister(string name);
-	static bool CheckTimer(string name);
-	static void Reset(string name);
-	static void Set(string name, int limit_time);
+	static void Start();//开始计时
+	static void UpdateOnce();//更新
+	static void Register(string name, int limit_time);//注册一个计时器
+	static void UnRegister(string name);//清除一个计时器
+	static bool CheckTimer(string name);//检查计时器
+	static void Reset(string name);//重置计时器
+	static void Set(string name, int limit_time);//重设计时器
 
 private:
 	static vector<TIMEINFO*> _timers;

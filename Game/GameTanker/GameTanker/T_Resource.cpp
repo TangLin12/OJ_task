@@ -1,5 +1,5 @@
 #include "T_Resource.h"
-
+//载入资源
 T_Resource::T_Resource()
 {
 	_backgroud = cvLoadImage("./res/BackGround.png");
@@ -26,13 +26,20 @@ T_Resource::T_Resource()
 		sprintf_s(filename, "./res/prop_bmp%d.png", i);
 		_iterm[i] = cvLoadImage(filename, 1);
 	}
+	for (int i = 0;i < 10;i++) {
+		sprintf_s(filename, "./res/num%d.png", i);
+		_nums[i] = cvLoadImage(filename, 1);
+	}
 	_num = cvLoadImage("./res/num.png");
 	_blood = cvLoadImage("./res/blood.png");
+	_end = cvLoadImage("./res/end.png");
+	_endUI = cvCreateImage(cvSize(960, 480), IPL_DEPTH_8U, 3);
 
 	cvNamedWindow("TankGame");
 	
 
 }
+//静态成员初始化
 T_Resource* T_Resource::_resource = NULL;
 void T_Resource::DestoryInstance()
 {
@@ -49,9 +56,21 @@ void T_Resource::DestoryInstance()
 			cvReleaseImage(&_enemyTank[i][j]);
 		}
 	}
+	cvReleaseImage(&_meun);
+	for (int i = 0;i < 6;i++) {
+		cvReleaseImage(&_iterm[i]);
+	}
+	for (int i = 0;i < 10;i++) {
+		cvReleaseImage(&_nums[i]);
+	}
+	cvReleaseImage(&_num);
+	cvReleaseImage(&_blood);
+	cvReleaseImage(&_end);
+	cvReleaseImage(&_endUI);
+
 	cvDestroyWindow("TankGame");
 }
-
+//展示窗口
 void T_Resource::ShowFrame()
 {
 	cvShowImage("TankGame", _levelImage);

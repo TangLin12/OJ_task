@@ -142,7 +142,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="T_Game.cpp" />
     <ClCompile Include="T_Iterm.cpp" />
@@ -152,17 +151,13 @@
     <ClCompile Include="T_Spirit.cpp" />
     <ClCompile Include="T_Time.cpp" />
     <ClCompile Include="T_Tool.cpp" />
-    <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="T_Frame.h" />
     <ClInclude Include="T_Keyboard.h" />
     <ClInclude Include="T_Resource.h" />
     <ClInclude Include="T_Spirit.h" />
     <ClInclude Include="T_Time.h" />
     <ClInclude Include="T_Tool.h" />
-    <ClInclude Include="View.h" />
-    <ClInclude Include="Controller.h" />
     <ClInclude Include="T_Game.h" />
     <ClInclude Include="T_Map.h" />
     <ClInclude Include="T_Iterm.h" />

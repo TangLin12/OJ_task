@@ -1,119 +1,147 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="T_KeyBoard" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="T_KeyBoard">
+    <Position X="11.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAABAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAAAAIAAABAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>T_Keyboard.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Resource" Collapsed="true">
-    <Position X="8.75" Y="1.5" Width="1.5" />
+  <Class Name="T_Resource">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="T_Resource::T_Garbo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>T_Resource.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAgAAIAABAAAAAAgBCAgQAQABBQ=</HashCode>
+      <HashCode>AAAAAIAAQCAAAAAAAAgAAIAABAAAAAAgBCAgQAQABhQ=</HashCode>
       <FileName>T_Resource.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Bullet" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
+  <Class Name="T_Bullet">
+    <Position X="0.5" Y="3.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIIIAAAgAAAAAAAAEQAABAAAAAAAAAAgAAAAE=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Spirit" Collapsed="true">
-    <Position X="3" Y="2" Width="1.5" />
+  <Class Name="T_Spirit">
+    <Position X="6.25" Y="3.25" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAACAAQAIAAAgAAAAAEAMEAQMABAAAAAgAACgAAAAA=</HashCode>
+      <HashCode>AAAACAAAAIACAgAAAAAEAMEAQMABAAAAAgAACgAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_MyTank" Collapsed="true">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+  <Class Name="T_MyTank">
+    <Position X="8" Y="7.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgAAAAAEAAEAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_EnemyTank" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="T_EnemyTank">
+    <Position X="4.5" Y="7.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgABAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Tool" Collapsed="true">
-    <Position X="5.25" Y="2.5" Width="1.5" />
+  <Class Name="T_Tool">
+    <Position X="13.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAABAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAIAAAAABAgAAAAAEAAAAAAAAAAAQAAAAAAAAAAI=</HashCode>
       <FileName>T_Tool.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Game" Collapsed="true">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+  <Class Name="T_Game">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="T_Game::T_Garbo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>T_Game.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAYAAABAICFABgAIAAAACAgIBAAABAACAEYiAAABBBY=</HashCode>
+      <HashCode>AAYAAABAICFABgAIAAAACQgIBAAABAACAEYiAAABBBY=</HashCode>
       <FileName>T_Game.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Frame" Collapsed="true">
-    <Position X="7" Y="0.5" Width="1.5" />
+  <Class Name="T_Frame">
+    <Position X="13.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAgAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>T_Game.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Map" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+  <Class Name="T_Map">
+    <Position X="15.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgIAAAEAAAgBAAAAEAAAAIAABAAAAAEAAAAAAAAA=</HashCode>
       <FileName>T_Map.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_BitMap" Collapsed="true">
-    <Position X="1.5" Y="4" Width="1.5" />
+  <Class Name="T_BitMap">
+    <Position X="4.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAAAQAACAAAAAAABAAAAAABAAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAAAAAACAAgQAACAAAAAAABAAAAAABAAAAAAQAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Timer" Collapsed="true">
-    <Position X="8.75" Y="2.5" Width="1.5" />
+  <Class Name="T_Timer">
+    <Position X="11.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAACAABAABAAAgAEAAAAAJAAAAAAAAAAAAEAQ=</HashCode>
       <FileName>T_Time.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="T_Iterm" Collapsed="true">
-    <Position X="5.75" Y="4.5" Width="1.5" />
+  <Class Name="T_Iterm">
+    <Position X="17" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAEAAEAAgQAAAAAAEAAQEBAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>T_Iterm.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="TIMEINFO" Collapsed="true">
-    <Position X="7" Y="2.5" Width="1.5" />
+  <Class Name="T_Memento">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAgAA=</HashCode>
+      <FileName>T_Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="T_Archive">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAiAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>T_Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TIMEINFO">
+    <Position X="17" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>T_Time.h</FileName>
     </TypeIdentifier>
   </Struct>
-  <Enum Name="DIR" Collapsed="true">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+  <Enum Name="DIR">
+    <Position X="11.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAChAAAAA=</HashCode>
       <FileName>T_Tool.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="STATE" Collapsed="true">
-    <Position X="8.75" Y="3.75" Width="1.5" />
+  <Enum Name="STATE">
+    <Position X="15.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAgAAAAIAAAAAAAAAACAAAAACAAAAAAAA=</HashCode>
       <FileName>T_Game.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="KIND" Collapsed="true">
-    <Position X="7" Y="3.75" Width="1.5" />
+  <Enum Name="KIND">
+    <Position X="13.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAQAAAACEAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>T_Map.h</FileName>

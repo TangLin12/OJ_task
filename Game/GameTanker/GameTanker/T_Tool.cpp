@@ -7,7 +7,7 @@ T_Tool::T_Tool()
 T_Tool::~T_Tool()
 {
 }
-
+//随机位置////////////////////////////////////
 CvPoint T_Tool::RandPos()
 {
 	CvPoint pos;
@@ -28,7 +28,7 @@ CvPoint T_Tool::RandPos()
 	}
 	return CvPoint(pos);
 }
-
+//随机方向//////////////////////////////////
 DIR T_Tool::GameAI()
 {
 	switch (rand()%4)
@@ -46,7 +46,7 @@ DIR T_Tool::GameAI()
 	}
 
 }
-
+//公有绘图方法实现///////////////////////////
 void T_Tool::Draw(IplImage * background, IplImage * img, CvPoint pos)
 {
 	for (int i = 0;i < img->height;i++) {
@@ -59,7 +59,9 @@ void T_Tool::Draw(IplImage * background, IplImage * img, CvPoint pos)
 			int G = CV_IMAGE_ELEM(img, uchar, i, j * 3 + 1);
 			int R = CV_IMAGE_ELEM(img, uchar, i, j * 3 + 2);
 
-
+			if (B == 0 && G == 0 && R == 0) {
+				continue;
+			}
 
 			CV_IMAGE_ELEM(background, uchar, i + pos.y, (j + pos.x) * 3 + 0) = B;
 			CV_IMAGE_ELEM(background, uchar, i + pos.y, (j + pos.x) * 3 + 1) = G;
@@ -67,7 +69,7 @@ void T_Tool::Draw(IplImage * background, IplImage * img, CvPoint pos)
 		}
 	}
 }
-
+//矩形交错判定//////////////////////////////////
 bool T_Tool::Intersect(CvRect r1, CvRect r2)
 {
 	int c1_x = r1.x + r1.width / 2;

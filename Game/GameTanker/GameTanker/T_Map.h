@@ -15,9 +15,9 @@ enum KIND {
 	OBJ_IRON = 2,
 	OBJ_GRASS = 3,
 	OBJ_STAR = 7
-};
+};//枚举砖块种类
 
-class T_Memento {
+class T_Memento {//信息存储的单个元素
 public:
 	vector<vector<int>> _map;
 
@@ -31,28 +31,27 @@ public:
 	}
 };
 
-class T_Map {
+class T_Map {//产生信息的本身
 public:
 	vector<vector<int>> _map;
 
 	int _wallTime;
 
 	T_Map();
-	T_Map(int kind);
 
+	void Load(int kind);//读取
 	void Load(T_Memento memento);
-	T_Memento Save();
+	T_Memento Save();//保存
 
-	bool CanDestory(int col, int row);
-	bool CantMove(int col, int row);
+	bool CantMove(int col, int row);//当前点是否可穿过
 
-	void Intersect(T_Bullet* bullet);
+	void Intersect(T_Bullet* bullet);//交错判定
 	void Intersect(T_Spirit* spirit);
 
-	static void Draw(IplImage * background, CvPoint pos, KIND kind);
+	static void Draw(IplImage * background, CvPoint pos, KIND kind);//绘画
 };
 
-class T_Archive {
+class T_Archive {//存储状态
 private:
 	vector<T_Memento> _mementoArray;
 public:

@@ -1,0 +1,10 @@
+﻿生成启动时间为 2016/7/23 星期六 20:23:09。
+     1>项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt T_Game.cpp
+         T_Game.cpp
+     1>已完成生成项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.34

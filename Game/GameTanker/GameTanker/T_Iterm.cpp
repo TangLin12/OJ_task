@@ -1,6 +1,6 @@
 #include "T_Iterm.h"
 #include"T_Resource.h"
-
+//初始化道具///////////////////////////////////
 T_Iterm::T_Iterm(int now_time)
 {
 	_nowTime = now_time;
@@ -11,7 +11,7 @@ T_Iterm::T_Iterm(int now_time)
 	_img = T_Resource::GetInstance()->_iterm[_kind];
 	_preTime = _nowTime;
 }
-
+//画图方法/////////////////////////////////////
 void T_Iterm::Draw(IplImage * background)
 {
 	for (int i = 0;i < _img->height;i++) {
@@ -32,14 +32,14 @@ void T_Iterm::Draw(IplImage * background)
 		}
 	}
 }
-
+//道具与spirit交错时判定////////////////////////
 bool T_Iterm::GetIterm(T_Spirit * spirit)
 {
 	if (T_Tool::Intersect(this->GetRecet(), spirit->GetRecet())) {
 		_showTime = 0;
 		if (_kind <= 3) {
 			spirit->_bulletKind = _kind;
-			spirit->itermTime = 500;
+			spirit->_itermTime = 500;
 			return false;
 		}
 		else if(_kind==5){
@@ -52,7 +52,7 @@ bool T_Iterm::GetIterm(T_Spirit * spirit)
 	}
 	return false;
 }
-
+//返回图片CvRect///////////////////////////
 CvRect T_Iterm::GetRecet()
 {
 	CvRect rect = { _pos.x,_pos.y,_img->width,_img->height };

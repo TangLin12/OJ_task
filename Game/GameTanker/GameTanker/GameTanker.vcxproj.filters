@@ -18,12 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="View.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Controller.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="T_Resource.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -50,12 +44,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Controller.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="View.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="T_Game.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -72,9 +60,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="T_Map.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="T_Frame.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="T_Time.h">

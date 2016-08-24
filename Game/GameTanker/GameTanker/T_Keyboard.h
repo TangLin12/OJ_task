@@ -7,10 +7,10 @@
 
 class T_KeyBoard {
 public:
-	static DIR SenseMove();
-	static bool IsHit();
-	static bool IsSpace();
-	static bool IsPause();
+	static DIR SenseMove();//感受移动
+	static bool IsHit();//感受攻击	
+	static bool IsSpace();//感受是否
+	static bool IsPause();//感受是否暂停
 };
 
 #endif

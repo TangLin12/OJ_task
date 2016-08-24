@@ -18,10 +18,10 @@ public:
 	T_Tool();
 	~T_Tool();
 
-	static CvPoint RandPos();
-	static DIR GameAI();
-	static void Draw(IplImage* background, IplImage* img, CvPoint pos);
-	static bool Intersect(CvRect r1, CvRect r2);
+	static CvPoint RandPos();//敌人坦克出现
+	static DIR GameAI();//敌人AI
+	static void Draw(IplImage* background, IplImage* img, CvPoint pos);//公有画图接口
+	static bool Intersect(CvRect r1, CvRect r2);//交错判定
 };
 
 #endif
