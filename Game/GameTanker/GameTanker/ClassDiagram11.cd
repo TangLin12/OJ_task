@@ -7,6 +7,7 @@
       <FileName>T_Keyboard.h</FileName>
     </TypeIdentifier>
   </Class>
+<<<<<<< HEAD
   <Class Name="T_Resource">
     <Position X="21" Y="0.5" Width="1.5" />
     <NestedTypes>
@@ -23,11 +24,23 @@
   </Class>
   <Class Name="T_Bullet">
     <Position X="0.5" Y="3.25" Width="3.25" />
+=======
+  <Class Name="T_Resource" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIIIAAAgAAAAAAAAEQAABAAAAAAAAAAgAAAAE=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAAgAAIAABAAAAAAgBCAAQAQABBQ=</HashCode>
+      <FileName>T_Resource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="T_Bullet" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+>>>>>>> parent of e0d9470... add feature
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAICAAgQAACAAAAEAABAAAAAABAAAAgAQAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
+<<<<<<< HEAD
   <Class Name="T_Spirit">
     <Position X="6.25" Y="3.25" Width="2.75" />
     <TypeIdentifier>
@@ -37,13 +50,29 @@
   </Class>
   <Class Name="T_MyTank">
     <Position X="8" Y="7.75" Width="2.75" />
+=======
+  <Class Name="T_Spirit" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAgAAAAAEAAEAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAICAAgQAACAAAIAAAJAAAAAABAAACgAQAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="T_MyTank" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+>>>>>>> parent of e0d9470... add feature
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAgAAAAAAAAEAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>T_Spirit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+<<<<<<< HEAD
   <Class Name="T_EnemyTank">
     <Position X="4.5" Y="7.75" Width="2.75" />
+=======
+  <Class Name="T_EnemyTank" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+>>>>>>> parent of e0d9470... add feature
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAgABAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>T_Spirit.h</FileName>
@@ -56,6 +85,7 @@
       <FileName>T_Tool.h</FileName>
     </TypeIdentifier>
   </Class>
+<<<<<<< HEAD
   <Class Name="T_Game">
     <Position X="19" Y="0.5" Width="1.5" />
     <NestedTypes>
@@ -67,6 +97,12 @@
     </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAYAAABAICFABgAIAAAACQgIBAAABAACAEYiAAABBBY=</HashCode>
+=======
+  <Class Name="T_Game" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACFAAAAIAAAACAgABAAABAACAEYCAAABBBY=</HashCode>
+>>>>>>> parent of e0d9470... add feature
       <FileName>T_Game.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,10 +116,11 @@
   <Class Name="T_Map">
     <Position X="15.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgIAAAEAAAgBAAAAEAAAAIAABAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>T_Map.h</FileName>
     </TypeIdentifier>
   </Class>
+<<<<<<< HEAD
   <Class Name="T_BitMap">
     <Position X="4.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
@@ -128,6 +165,10 @@
   </Struct>
   <Enum Name="DIR">
     <Position X="11.75" Y="7.25" Width="1.5" />
+=======
+  <Enum Name="DIR" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+>>>>>>> parent of e0d9470... add feature
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAChAAAAA=</HashCode>
       <FileName>T_Tool.h</FileName>

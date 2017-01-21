@@ -33,11 +33,14 @@ public:
 	IplImage* _enemyTank[2][4];
 	IplImage* _levelImage;
 	IplImage* _meun;
+<<<<<<< HEAD
 	IplImage* _nums[10];
 	IplImage* _blood;
 	IplImage* _end;
 	IplImage* _endUI;
 	IplImage* _num;
+=======
+>>>>>>> parent of e0d9470... add feature
 
 	static T_Resource* GetInstance() {//对外接口
 		if (_resource == NULL) {

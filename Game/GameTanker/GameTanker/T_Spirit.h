@@ -11,9 +11,10 @@ using namespace std;
 enum DIR ;
 
 #define PIXEL 32
-
-class T_BitMap {
+class T_Spirit;
+class T_Bullet {
 public:
+<<<<<<< HEAD
 	CvPoint _pos;//位置
 	DIR _dir;//方向
 	int _speed;//速度
@@ -28,6 +29,16 @@ public:
 	IplImage* _img;//图片指针信息
 	int _kind;//种类
 	int _fireNum;//--爆炸图片
+=======
+	IplImage* _img;
+	CvPoint _pos;
+	DIR _dir;
+	int _speed;
+	int _width, _height;
+	bool _isNeedClear;
+	int _kind;
+	int _fireNum;
+>>>>>>> parent of e0d9470... add feature
 
 	T_Bullet(CvPoint tank_center_pos, DIR dir);
 
@@ -42,10 +53,11 @@ public:
 };
 
 
-class T_Spirit :public T_BitMap{
+class T_Spirit {
 protected:
 
 public:
+<<<<<<< HEAD
 	IplImage* _img[4];//四个方向图片
 	CvPoint _prePos;//上一个位置
 	int _hp;//血量
@@ -54,6 +66,21 @@ public:
 	int _tankKind;//坦克种类	
 	int _bulletKind;//子弹种类--应该放在子弹的构造函数中
 	int _itermTime;//道具作用时间
+=======
+	IplImage* _img[4];
+	CvPoint _prePos;
+	int _hp;
+	vector<T_Bullet*> _bullet;
+	CvPoint _pos;
+	DIR _dir;
+	int _speed;
+	int _width, _height;
+	bool _isNeedClear;
+	int _preTime, _nowTime;
+	int _tankKind;
+	int _bulletKind;
+	int itermTime;
+>>>>>>> parent of e0d9470... add feature
 
 	virtual void SetImage(IplImage* img[]) = 0;
 	virtual void Draw(IplImage* background) = 0;

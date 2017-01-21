@@ -1,6 +1,10 @@
 #include "T_Map.h"
+<<<<<<< HEAD
 #include<fstream>
 //基本构造函数
+=======
+
+>>>>>>> parent of e0d9470... add feature
 T_Map::T_Map()
 {
 	_map = {
@@ -20,6 +24,7 @@ T_Map::T_Map()
 		{ 0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,2 },
 		{ 2,2,2,2,2,2,2,2,1,7,1,2,2,2,2,2,2,2,2,2 },
 	};
+<<<<<<< HEAD
 	_wallTime = -1;
 
 }
@@ -48,6 +53,10 @@ T_Memento T_Map::Save()
 {
 	T_Memento memento(_map);
 	return memento;
+=======
+	_wallTime = 0;
+	_mapSpare = _map;
+>>>>>>> parent of e0d9470... add feature
 }
 //读图的交错判定-与子弹/////////////////////////
 void T_Map::Intersect(T_Bullet * bullet)
@@ -135,6 +144,7 @@ void T_Map::Draw(IplImage * background, CvPoint pos, KIND kind)
 		}
 	}
 }
+<<<<<<< HEAD
 //存储memento
 void T_Archive::AddIterm(T_Memento memento)
 {
@@ -145,3 +155,5 @@ T_Memento T_Archive::Load(int state)
 {
 	return _mementoArray[state];
 }
+=======
+>>>>>>> parent of e0d9470... add feature

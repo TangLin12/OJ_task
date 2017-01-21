@@ -82,7 +82,6 @@ void T_Bullet::Intersenct(T_Spirit * pSpirit)
 		if (pSpirit->_hp == 0) {
 			pSpirit->_isNeedClear = true;
 		}
-
 	}
 }
 //下一版本实现////////////////////////////////////
@@ -231,5 +230,3 @@ CvRect T_Spirit::GetRecet()
 	CvRect rect = { _pos.x,_pos.y,_width,_height };
 	return rect;
 }
-
-

@@ -1,53 +1,225 @@
-﻿生成启动时间为 2016/7/24 星期日 10:24:52。
+﻿生成启动时间为 2016/10/30 星期日 15:58:07。
      1>项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt T_Game.cpp T_Iterm.cpp T_Keyboard.cpp T_Map.cpp T_Resource.cpp T_Spirit.cpp T_Time.cpp T_Tool.cpp main.cpp
-     1>cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
-         T_Game.cpp
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(235): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(250): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(251): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(260): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(261): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(278): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(420): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(422): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(427): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(429): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(471): warning C4838: 从“unsigned int”转换到“int”需要收缩转换
-         T_Iterm.cpp
-         T_Keyboard.cpp
-     1>d:\program files\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt T_Game.cpp T_Map.cpp
          T_Map.cpp
      1>d:\program files\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-         T_Resource.cpp
-         T_Spirit.cpp
-         T_Time.cpp
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(15): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(30): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(37): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(48): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(59): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(69): warning C4018: “<”: 有符号/无符号不匹配
-     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
-         T_Tool.cpp
-         main.cpp
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(36): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(37): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(42): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(45): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C2039: “GetInstance”: 不是“T_Resource”的成员
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(11): note: 参见“T_Resource”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C3861: “GetInstance”: 找不到标识符
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C2227: “->DestoryInstance”的左边必须指向类/结构/联合/泛型类型
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): note: 类型是“unknown-type”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(17): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(18): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(27): error C2011: “T_Bullet”:“class”类型重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(15): note: 参见“T_Bullet”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(60): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(61): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(69): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(70): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(71): error C2086: “CvPoint T_Spirit::_prePos”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(62): note: 参见“T_Spirit::_prePos”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(72): error C2086: “int T_Spirit::_hp”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(63): note: 参见“T_Spirit::_hp”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(73): error C2086: “std::vector<T_Bullet *,std::allocator<_Ty>> T_Spirit::_bullet”: 重定义
+                 with
+                 [
+                     _Ty=T_Bullet *
+                 ]
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(64): note: 参见“T_Spirit::_bullet”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(79): error C2086: “int T_Spirit::_preTime”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(65): note: 参见“T_Spirit::_preTime”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(79): error C2086: “int T_Spirit::_nowTime”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(65): note: 参见“T_Spirit::_nowTime”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(80): error C2086: “int T_Spirit::_tankKind”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(66): note: 参见“T_Spirit::_tankKind”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(81): error C2086: “int T_Spirit::_bulletKind”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(67): note: 参见“T_Spirit::_bulletKind”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(83): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(85): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(21): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(22): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(26): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(27): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(28): error C2535: “DIR T_Tool::GameAI(void)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(23): note: 参见“T_Tool::GameAI”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(29): error C2535: “bool T_Tool::Intersect(CvRect,CvRect)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(25): note: 参见“T_Tool::Intersect”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(30): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(31): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(31): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(20): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(21): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(21): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(36): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(37): error C3769: “T_Map”: 嵌套类不能与它的直接封闭类同名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(37): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(61): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(62): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(75): error C2059: 语法错误:“==”
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\fstream(13): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(5): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(9): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(47): error C2061: 语法错误: 标识符“T_Memento”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(52): error C3646: “Save”: 未知重写说明符
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(52): error C2059: 语法错误:“(”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(53): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(147): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(149): error C2653: “T_Archive”: 不是类或命名空间名称
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(150): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(154): error C2653: “T_Archive”: 不是类或命名空间名称
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(154): error C3646: “Load”: 未知重写说明符
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(154): error C2059: 语法错误:“(”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(155): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(158): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.cpp(160): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(35): fatal error C1075: 左侧的 大括号“{” 与文件结尾不匹配
+         T_Game.cpp
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(21): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(22): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(26): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(27): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(28): error C2535: “DIR T_Tool::GameAI(void)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(23): note: 参见“T_Tool::GameAI”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(29): error C2535: “bool T_Tool::Intersect(CvRect,CvRect)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(25): note: 参见“T_Tool::Intersect”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(30): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(31): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_tool.h(31): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(10): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(11): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(15): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(16): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(17): error C2535: “bool T_KeyBoard::IsHit(void)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(12): note: 参见“T_KeyBoard::IsHit”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(18): error C2535: “bool T_KeyBoard::IsSpace(void)”: 已经定义或声明成员函数
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(13): note: 参见“T_KeyBoard::IsSpace”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(19): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(20): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_keyboard.h(20): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(17): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(18): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(27): error C2011: “T_Bullet”:“class”类型重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(15): note: 参见“T_Bullet”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(60): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(61): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(69): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(70): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(71): error C2086: “CvPoint T_Spirit::_prePos”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(62): note: 参见“T_Spirit::_prePos”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(72): error C2086: “int T_Spirit::_hp”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(63): note: 参见“T_Spirit::_hp”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(73): error C2086: “std::vector<T_Bullet *,std::allocator<_Ty>> T_Spirit::_bullet”: 重定义
+                 with
+                 [
+                     _Ty=T_Bullet *
+                 ]
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(64): note: 参见“T_Spirit::_bullet”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(79): error C2086: “int T_Spirit::_preTime”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(65): note: 参见“T_Spirit::_preTime”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(79): error C2086: “int T_Spirit::_nowTime”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(65): note: 参见“T_Spirit::_nowTime”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(80): error C2086: “int T_Spirit::_tankKind”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(66): note: 参见“T_Spirit::_tankKind”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(81): error C2086: “int T_Spirit::_bulletKind”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(67): note: 参见“T_Spirit::_bulletKind”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(83): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_spirit.h(85): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(36): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(37): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(42): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(45): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C2039: “GetInstance”: 不是“T_Resource”的成员
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(11): note: 参见“T_Resource”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C3861: “GetInstance”: 找不到标识符
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): error C2227: “->DestoryInstance”的左边必须指向类/结构/联合/泛型类型
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_resource.h(21): note: 类型是“unknown-type”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(20): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(21): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(21): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(36): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(37): error C3769: “T_Map”: 嵌套类不能与它的直接封闭类同名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(37): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(61): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(62): error C2334: “{”的前面有意外标记；跳过明显的函数体
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_map.h(75): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_time.h(8): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(30): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(31): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(32): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(33): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(36): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(37): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(69): error C2059: 语法错误:“<<”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(70): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(76): error C2079: “T_Map::T_Game::_map”使用未定义的 class“T_Map”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(80): error C2059: 语法错误:“==”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(81): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(82): error C2086: “T_Map::T_Resource *T_Map::T_Game::_totalImg”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(73): note: 参见“T_Map::T_Game::_totalImg”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(83): error C2086: “std::vector<T_Spirit *,std::allocator<_Ty>> T_Map::T_Game::_myTank”: 重定义
+                 with
+                 [
+                     _Ty=T_Spirit *
+                 ]
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(74): note: 参见“T_Map::T_Game::_myTank”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(84): error C2086: “std::vector<T_Spirit *,std::allocator<_Ty>> T_Map::T_Game::_enemyTank”: 重定义
+                 with
+                 [
+                     _Ty=T_Spirit *
+                 ]
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(75): note: 参见“T_Map::T_Game::_enemyTank”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(85): error C2079: “T_Map::T_Game::_map”使用未定义的 class“T_Map”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(85): error C2086: “int T_Map::T_Game::_map”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(76): note: 参见“T_Map::T_Game::_map”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(86): error C2086: “T_Map::STATE T_Map::T_Game::_state”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(77): note: 参见“T_Map::T_Game::_state”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(87): error C2086: “T_Map::T_Iterm *T_Map::T_Game::_iterm”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(78): note: 参见“T_Map::T_Game::_iterm”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(88): error C2086: “bool T_Map::T_Game::_win”: 重定义
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(79): note: 参见“T_Map::T_Game::_win”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(91): error C2059: 语法错误:“>>”
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(93): error C2238: 意外的标记位于“;”之前
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(3): error C2039: “_game”: 不是“T_Map::T_Game”的成员
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(26): note: 参见“T_Map::T_Game”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(6): error C3254: “T_Map”: 类包含显式重写“{ctor}”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(6): error C2838: “{ctor}”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(22): error C2039: “GetInstance”: 不是“T_Map::T_Game”的成员
+         f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.h(26): note: 参见“T_Map::T_Game”的声明
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(31): error C3254: “T_Map”: 类包含显式重写“Init”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(31): error C2838: “Init”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(85): error C3254: “T_Map”: 类包含显式重写“DestoryInstance”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(85): error C2838: “DestoryInstance”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(106): error C3254: “T_Map”: 类包含显式重写“EdgeTest”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(106): error C2838: “EdgeTest”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(123): error C3254: “T_Map”: 类包含显式重写“Edge”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(123): error C2838: “Edge”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(153): error C3254: “T_Map”: 类包含显式重写“TestIntersect”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(153): error C2838: “TestIntersect”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(185): error C3254: “T_Map”: 类包含显式重写“WinJudge”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(185): error C2838: “WinJudge”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(202): error C3254: “T_Map”: 类包含显式重写“AllMove”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(202): error C2838: “AllMove”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(227): error C3254: “T_Map”: 类包含显式重写“AllAttack”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(227): error C2838: “AllAttack”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(245): error C3254: “T_Map”: 类包含显式重写“AllSense”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(245): error C2838: “AllSense”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(251): error C3254: “T_Map”: 类包含显式重写“AllClear”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(251): error C2838: “AllClear”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(280): error C3254: “T_Map”: 类包含显式重写“EnemyUpdate”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(280): error C2838: “EnemyUpdate”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(299): error C3254: “T_Map”: 类包含显式重写“ItermUpdate”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(299): error C2838: “ItermUpdate”: 成员声明中的非法限定名
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(317): error C3254: “T_Map”: 类包含显式重写“Run”，但并不从包含函数声明的接口派生
+     1>f:\user\documents\github\oj_task\game\gametanker\gametanker\t_game.cpp(317): fatal error C1003: 错误计数超过 100；正在停止编译
          正在生成代码...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.exe" /INCREMENTAL /NOLOGO opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_ml2413d.lib opencv_nonfree2413d.lib opencv_objdetect2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.lib" /MACHINE:X86 Debug\main.obj
-         Debug\T_Game.obj
-         Debug\T_Iterm.obj
-         Debug\T_Keyboard.obj
-         Debug\T_Map.obj
-         Debug\T_Resource.obj
-         Debug\T_Spirit.obj
-         Debug\T_Time.obj
-         Debug\T_Tool.obj
-         GameTanker.vcxproj -> F:\user\Documents\GitHub\OJ_task\Game\GameTanker\Debug\GameTanker.exe
-     1>已完成生成项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“F:\user\Documents\GitHub\OJ_task\Game\GameTanker\GameTanker\GameTanker.vcxproj”(Build 个目标)的操作 - 失败。
 
-已成功生成。
+生成失败。
 
-已用时间 00:00:25.14
+已用时间 00:00:08.41

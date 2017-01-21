@@ -46,6 +46,7 @@ DIR T_Tool::GameAI()
 	}
 
 }
+<<<<<<< HEAD
 //公有绘图方法实现///////////////////////////
 void T_Tool::Draw(IplImage * background, IplImage * img, CvPoint pos)
 {
@@ -70,6 +71,9 @@ void T_Tool::Draw(IplImage * background, IplImage * img, CvPoint pos)
 	}
 }
 //矩形交错判定//////////////////////////////////
+=======
+
+>>>>>>> parent of e0d9470... add feature
 bool T_Tool::Intersect(CvRect r1, CvRect r2)
 {
 	int c1_x = r1.x + r1.width / 2;

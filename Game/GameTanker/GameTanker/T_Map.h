@@ -17,6 +17,7 @@ enum KIND {
 	OBJ_STAR = 7
 };//枚举砖块种类
 
+<<<<<<< HEAD
 class T_Memento {//信息存储的单个元素
 public:
 	vector<vector<int>> _map;
@@ -32,16 +33,22 @@ public:
 };
 
 class T_Map {//产生信息的本身
+=======
+class T_Map {
+>>>>>>> parent of e0d9470... add feature
 public:
 	vector<vector<int>> _map;
-
+	vector<vector<int>> _mapSpare;
 	int _wallTime;
 
 	T_Map();
+<<<<<<< HEAD
 
 	void Load(int kind);//读取
 	void Load(T_Memento memento);
 	T_Memento Save();//保存
+=======
+>>>>>>> parent of e0d9470... add feature
 
 	bool CantMove(int col, int row);//当前点是否可穿过
 
@@ -51,6 +58,7 @@ public:
 	static void Draw(IplImage * background, CvPoint pos, KIND kind);//绘画
 };
 
+<<<<<<< HEAD
 class T_Archive {//存储状态
 private:
 	vector<T_Memento> _mementoArray;
@@ -64,4 +72,6 @@ public:
 	T_Memento Load(int state);
 };
 
+=======
+>>>>>>> parent of e0d9470... add feature
 #endif

@@ -26,6 +26,7 @@ T_Resource::T_Resource()
 		sprintf_s(filename, "./res/prop_bmp%d.png", i);
 		_iterm[i] = cvLoadImage(filename, 1);
 	}
+<<<<<<< HEAD
 	for (int i = 0;i < 10;i++) {
 		sprintf_s(filename, "./res/num%d.png", i);
 		_nums[i] = cvLoadImage(filename, 1);
@@ -34,6 +35,8 @@ T_Resource::T_Resource()
 	_blood = cvLoadImage("./res/blood.png");
 	_end = cvLoadImage("./res/end.png");
 	_endUI = cvCreateImage(cvSize(960, 480), IPL_DEPTH_8U, 3);
+=======
+>>>>>>> parent of e0d9470... add feature
 
 	cvNamedWindow("TankGame");
 	

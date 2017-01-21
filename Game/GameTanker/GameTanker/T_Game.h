@@ -9,8 +9,6 @@
 #include"T_Map.h"
 #include"T_Time.h"
 #include"T_Iterm.h"
-#include <mmsystem.h>
-#pragma comment(lib,"winmm.lib")
 class T_Resource;
 #define MAXROW 15
 #define MAXCOL 20
@@ -29,7 +27,13 @@ class T_Game {
 private:
 	int _level;//地图关卡
 
+<<<<<<< HEAD
 	T_Game();//单例构造
+=======
+	int _enemyLimit;
+	
+	T_Game();
+>>>>>>> parent of e0d9470... add feature
 	static T_Game* _game;
 	
 	bool EdgeTest(IplImage* background, IplImage* img, CvPoint pos);//边界测试
@@ -62,6 +66,7 @@ private:
 		}//垃圾回收类
 	};//单例释放
 public:
+<<<<<<< HEAD
 	int _score;//得分
 	int _enemyLimit;//敌人数量
 	int _enemyOnceSize;//敌人一次出现数量
@@ -72,6 +77,18 @@ public:
 	STATE _state;//状态控制
 	T_Iterm* _iterm;//道具实例化
 	bool _win;//胜利判断
+=======
+	int _enemyOnceSize;
+	T_Resource* _totalImg;
+	vector<T_Spirit*> _myTank;
+	vector<T_Spirit*> _enemyTank;
+	T_Map _map;
+	STATE _state;
+	T_Iterm* _iterm;
+	bool _win;
+
+	~T_Game();
+>>>>>>> parent of e0d9470... add feature
 
 	static T_Game* GetInstance();
 
@@ -87,8 +104,4 @@ public:
 	static void RunFrame(T_Game* game);
 	static void EndFrame(T_Game* game);
 };
-
-
-
-
 #endif

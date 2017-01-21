@@ -33,6 +33,7 @@ bool T_KeyBoard::IsSpace()
 	}
 	return false;
 }
+<<<<<<< HEAD
 //ÔÝÍ£¼ì²â////////////////////////////////////
 bool T_KeyBoard::IsPause()
 {
@@ -41,3 +42,5 @@ bool T_KeyBoard::IsPause()
 	}
 	return false;
 }
+=======
+>>>>>>> parent of e0d9470... add feature

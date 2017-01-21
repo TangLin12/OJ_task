@@ -43,7 +43,7 @@ bool T_Iterm::GetIterm(T_Spirit * spirit)
 			return false;
 		}
 		else if(_kind==5){
-			spirit->_hp += 1;
+			spirit->_hp++;
 			return false;
 		}
 		else {
